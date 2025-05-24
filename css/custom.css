@@ -90,9 +90,9 @@ body {
 }
 
 .sections-container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
+	 max-width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .introduzione {
@@ -100,6 +100,8 @@ body {
 	text-align: center;
 	background-color: #f8f9fa;
 	margin-bottom: 50px;
+	width: 100%;
+    margin-top: 0;
 }
 
 .centro {
