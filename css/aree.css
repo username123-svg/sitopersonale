@@ -1,0 +1,620 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.description {
+	width: 65%;
+}
+.elenco {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Crea due colonne */
+	gap: 20px; /* Distanza tra le colonne */
+	list-style-type: none; /* Rimuove i pallini dell'elenco */
+	padding: 0; /* Rimuove il padding dell'elenco */
+}
+.elenco li {
+	margin: 5px 0; /* Aggiungi un po' di margine tra gli elementi */
+}
+.header {
+    display: flex;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    align-items: center;
+}
+.headerpcto {
+    display: flex;
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    align-items: center;
+}
+.headercivica {
+    display: flex;
+    background-color: rgb(223, 88, 223);
+    color: white;
+    padding: 15px;
+    align-items: center;
+}
+.headerumanistica {
+    display: flex;
+    background-color: rgb(179, 126, 54);
+    color: white;
+    padding: 15px;
+    align-items: center;
+}
+.headerprofessionale {
+    display: flex;
+    background-color: rgb(58, 166, 216);
+    color: white;
+    padding: 15px;
+    align-items: center;
+}
+.header .title {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    padding-left: 15px;
+}
+.headerpcto .title {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    padding-left: 15px;
+}
+.headercivica .title {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    padding-left: 15px;
+}
+.headerumanistica .title {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    padding-left: 15px;
+}
+.headerprofessionale .title {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    padding-left: 15px;
+}
+
+.nav {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Padding costante */
+    border-radius: 5px; /* Bordo arrotondato */
+    border: 2px solid transparent; /* Bordo trasparente iniziale */
+    background-color: transparent; /* Sfondo trasparente iniziale */
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+.nav a:hover {
+    color: red;
+    background-color: white;
+    border-color: red;
+}
+
+.navpcto {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+.navpcto a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Padding costante */
+    border-radius: 5px; /* Bordo arrotondato */
+    border: 2px solid transparent; /* Bordo trasparente iniziale */
+    background-color: transparent; /* Sfondo trasparente iniziale */
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+.navpcto a:hover {
+    color: grey;
+    background-color: white;
+    border-color: grey;
+}
+
+.navcivica {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+.navcivica a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Padding costante */
+    border-radius: 5px; /* Bordo arrotondato */
+    border: 2px solid transparent; /* Bordo trasparente iniziale */
+    background-color: transparent; /* Sfondo trasparente iniziale */
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+.navcivica a:hover {
+    color: rgb(223, 88, 223);
+    background-color: white;
+    border-color: rgb(223, 88, 223);
+}
+
+.navumanistica {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+.navumanistica a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Padding costante */
+    border-radius: 5px; /* Bordo arrotondato */
+    border: 2px solid transparent; /* Bordo trasparente iniziale */
+    background-color: transparent; /* Sfondo trasparente iniziale */
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+.navumanistica a:hover {
+    color: rgb(179, 126, 54);
+    background-color: white;
+    border-color: rgb(179, 126, 54);
+}
+
+.navprofessionale {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+.navprofessionale a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Padding costante */
+    border-radius: 5px; /* Bordo arrotondato */
+    border: 2px solid transparent; /* Bordo trasparente iniziale */
+    background-color: transparent; /* Sfondo trasparente iniziale */
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+.navprofessionale a:hover {
+    color: rgb(58, 166, 216);
+    background-color: white;
+    border-color: rgb(58, 166, 216);
+}
+
+.container {
+    padding: 0;
+}
+
+.separator {
+    width: 2px;
+    background-color: white;
+    height: 100%;
+}
+
+.personal-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.personal-section {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+	padding: 2.5rem;
+	margin-bottom: 3rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	overflow: hidden;
+	position: relative;
+}
+
+.personal-section:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.personal-section h2 {
+	font-size: 2.2rem;
+	color: #333;
+	margin-bottom: 1.5rem;
+	position: relative;
+	padding-bottom: 0.5rem;
+}
+
+.personal-section h2::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 3px;
+	background-color: #e74c3c;
+	border-radius: 3px;
+}
+
+.personal-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+}
+
+.personal-content .description {
+	flex: 1;
+	min-width: 300px;
+	font-size: 1.1rem;
+	line-height: 1.7;
+	color: #555;
+}
+
+.personal-elenco {
+	list-style-type: none;
+	padding: 0;
+	flex: 1;
+	min-width: 300px;
+}
+
+.personal-elenco li {
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px dashed #eee;
+	font-size: 1.1rem;
+}
+
+.personal-elenco strong {
+	color: #c0392b;
+	min-width: 150px;
+	display: inline-block;
+}
+
+.personal-extra {
+	flex: 1;
+	min-width: 300px;
+	text-align: center;
+}
+
+.personal-extra img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.personal-extra img:hover {
+	transform: scale(1.03);
+}
+
+/* Animazioni personalizzate */
+@keyframes fadeInUpPersonal {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-personal {
+	animation: fadeInUpPersonal 0.8s ease forwards;
+}
+/* PCTO */
+.pcto-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.pcto-section {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+	padding: 2.5rem;
+	margin-bottom: 3rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	overflow: hidden;
+	position: relative;
+}
+
+.pcto-section:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.pcto-section h2 {
+	font-size: 2.2rem;
+	color: #424242;
+	margin-bottom: 1.5rem;
+	position: relative;
+	padding-bottom: 0.5rem;
+}
+
+.pcto-section h2::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 3px;
+	background-color: #757575;
+	border-radius: 3px;
+}
+
+.pcto-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+}
+
+.pcto-content .description {
+	flex: 1;
+	min-width: 300px;
+	font-size: 1.1rem;
+	line-height: 1.7;
+	color: #555;
+}
+
+.pcto-extra {
+	flex: 1;
+	min-width: 300px;
+	text-align: center;
+}
+
+.pcto-extra img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.pcto-extra img:hover {
+	transform: scale(1.03);
+}
+
+/* Animazioni personalizzate */
+@keyframes fadeInUpPcto {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-pcto {
+	animation: fadeInUpPcto 0.8s ease forwards;
+}
+/*area educazione civica*/
+.sectioncivica {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+	text-align: justify;
+}
+/*area umanistica*/
+.containerumanistica {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.sectionumanistica {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+	padding: 2.5rem;
+	margin-bottom: 3rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	overflow: hidden;
+	position: relative;
+}
+
+.sectionumanistica:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sectionumanistica h2 {
+	font-size: 2.2rem;
+	color: #333;
+	margin-bottom: 1.5rem;
+	position: relative;
+	padding-bottom: 0.5rem;
+}
+
+.sectionumanistica h2::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 3px;
+	background-color: rgb(179, 126, 54);
+	border-radius: 3px;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+}
+
+.description {
+	flex: 1;
+	min-width: 300px;
+	font-size: 1.1rem;
+	line-height: 1.7;
+	color: #555;
+}
+
+.extraumanistica {
+	flex: 1;
+	min-width: 300px;
+	text-align: center;
+}
+
+.extraumanistica a {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: rgb(179, 126, 54);
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(179, 126, 54, 0.3);
+}
+
+.extraumanistica a:hover {
+	background-color: rgb(159, 106, 34);
+	transform: translateY(-3px);
+	box-shadow: 0 6px 15px rgba(179, 126, 54, 0.4);
+}
+
+/* Animazioni personalizzate */
+@keyframes fadeInUpHumanistica {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-humanistica {
+	animation: fadeInUpHumanistica 0.8s ease forwards;
+}
+/*area professionale*/
+.containerprofessionale {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.sectionprofessionale {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+	padding: 2.5rem;
+	margin-bottom: 3rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	overflow: hidden;
+	position: relative;
+}
+
+.sectionprofessionale:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sectionprofessionale h2 {
+	font-size: 2.2rem;
+	color: #333;
+	margin-bottom: 1.5rem;
+	position: relative;
+	padding-bottom: 0.5rem;
+}
+
+.sectionprofessionale h2::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 3px;
+	background-color: rgb(58, 166, 216);
+	border-radius: 3px;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+}
+
+.description {
+	flex: 1;
+	min-width: 300px;
+	font-size: 1.1rem;
+	line-height: 1.7;
+	color: #555;
+}
+
+.extraprofessionale {
+	flex: 1;
+	min-width: 300px;
+	text-align: center;
+}
+
+.extraprofessionale a {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: rgb(58, 166, 216);
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(58, 166, 216, 0.3);
+}
+
+.extraprofessionale a:hover {
+	background-color: rgb(38, 146, 206);
+	transform: translateY(-3px);
+	box-shadow: 0 6px 15px rgba(58, 166, 216, 0.4);
+}
+
+/* Animazioni personalizzate */
+@keyframes fadeInUpProfessionale {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-professionale {
+	animation: fadeInUpProfessionale 0.8s ease forwards;
+}
+.extra {
+	width: 35%; /* L'immagine occupa 1/4 dello spazio */
+	padding-left: 20px; /* Un po' di spazio tra il testo e l'immagine */
+}
+
+.extra img {
+	width: 80%; /* L'immagine riempie completamente il contenitore */
+	height: 80%; /* Mantieni le proporzioni originali */
+	object-fit: cover;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box; /* Garantisce che il padding non faccia uscire il contenuto */
+    padding: 0; /* Elimina padding che potrebbe causare spazi bianchi */
+}
+.section h2 + .content .description {
+    margin-top: 0; /* Rimuove il margine superiore del paragrafo */
+}
