@@ -32,7 +32,7 @@ body {
 }
 .headercivica {
     display: flex;
-    background-color: rgb(223, 88, 223);
+    background-color: black;
     color: white;
     padding: 15px;
     align-items: center;
@@ -141,9 +141,9 @@ body {
     transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
 }
 .navcivica a:hover {
-    color: rgb(223, 88, 223);
+    color: black;
     background-color: white;
-    border-color: rgb(223, 88, 223);
+    border-color: black;
 }
 
 .navumanistica {
@@ -397,13 +397,93 @@ body {
 	animation: fadeInUpPcto 0.8s ease forwards;
 }
 /*area educazione civica*/
-.sectioncivica {
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: white;
-	text-align: justify;
+.civica-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.civica-section {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+	padding: 2.5rem;
+	margin-bottom: 3rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	overflow: hidden;
+	position: relative;
+}
+
+.civica-section:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.civica-section h2 {
+	font-size: 2.2rem;
+	color: #424242;
+	margin-bottom: 1.5rem;
+	position: relative;
+	padding-bottom: 0.5rem;
+}
+
+.civica-section h2::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 3px;
+	background-color: black;
+	border-radius: 3px;
+}
+
+.civica-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+}
+
+.civica-content .description {
+	flex: 1;
+	min-width: 300px;
+	font-size: 1.1rem;
+	line-height: 1.7;
+	color: #555;
+}
+
+.civica-extra {
+	flex: 1;
+	min-width: 300px;
+	text-align: center;
+}
+
+.civica-extra img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.civica-extra img:hover {
+	transform: scale(1.03);
+}
+
+/* Animazioni personalizzate */
+@keyframes fadeInUpcivica {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-civica {
+	animation: fadeInUpcivica 0.8s ease forwards;
 }
 /*area umanistica*/
 .containerumanistica {

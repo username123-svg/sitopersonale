@@ -213,13 +213,22 @@ body {
 }
 
 .bottone-edcivica {
-	background-image: url('https://www.mondadorieducation.it/content/uploads/2019/09/icone-webinar_educazione-civica@2x.png');
+	background-image: url('../img/edcivica.png');
 }
 
 .quadrato-edcivica {
-	border: 10px solid rgb(223, 88, 223);
-	color: black;
-	background-color: rgba(223, 88, 223, 0.2);
+    border: 10px solid black; /* Bordo bianco */
+    color: black;
+    background: 
+        /* Bandiera italiana sfumata */
+        linear-gradient(to right, 
+            rgba(0, 146, 70, 0.2) 0%,    /* Verde */
+            rgba(0, 146, 70, 0.2) 33%, 
+            rgba(255, 255, 255, 0.2) 33%, /* Bianco */
+            rgba(255, 255, 255, 0.2) 66%, 
+            rgba(206, 43, 55, 0.2) 66%,   /* Rosso */
+            rgba(206, 43, 55, 0.2) 100%);
+    background-size: 100% 100%, 60px 60px;
 }
 
 .bottone-umanistica {
