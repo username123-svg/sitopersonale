@@ -252,6 +252,7 @@ body {
 	font-size: 1.1rem;
 	line-height: 1.7;
 	color: #555;
+	text-align: justify;
 }
 
 .personal-elenco {
@@ -361,6 +362,7 @@ body {
 	font-size: 1.1rem;
 	line-height: 1.7;
 	color: #555;
+	text-align: justify;
 }
 
 .pcto-extra {
@@ -450,6 +452,7 @@ body {
 	font-size: 1.1rem;
 	line-height: 1.7;
 	color: #555;
+	text-align: justify;
 }
 
 .civica-extra {
@@ -468,6 +471,23 @@ body {
 
 .civica-extra img:hover {
 	transform: scale(1.03);
+}
+.civica-extra a {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(58, 166, 216, 0.3);
+}
+
+.civica-extra a:hover {
+	background-color: black;
+	transform: translateY(-3px);
+	box-shadow: 0 6px 15px rgba(58, 166, 216, 0.4);
 }
 
 /* Animazioni personalizzate */
@@ -540,6 +560,7 @@ body {
 	font-size: 1.1rem;
 	line-height: 1.7;
 	color: #555;
+	text-align: justify;
 }
 
 .extraumanistica {
@@ -636,6 +657,7 @@ body {
 	font-size: 1.1rem;
 	line-height: 1.7;
 	color: #555;
+	text-align: justify;
 }
 
 .extraprofessionale {
@@ -676,25 +698,4 @@ body {
 
 .animate-professionale {
 	animation: fadeInUpProfessionale 0.8s ease forwards;
-}
-.extra {
-	width: 35%; /* L'immagine occupa 1/4 dello spazio */
-	padding-left: 20px; /* Un po' di spazio tra il testo e l'immagine */
-}
-
-.extra img {
-	width: 80%; /* L'immagine riempie completamente il contenitore */
-	height: 80%; /* Mantieni le proporzioni originali */
-	object-fit: cover;
-}
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box; /* Garantisce che il padding non faccia uscire il contenuto */
-    padding: 0; /* Elimina padding che potrebbe causare spazi bianchi */
-}
-.section h2 + .content .description {
-    margin-top: 0; /* Rimuove il margine superiore del paragrafo */
 }
