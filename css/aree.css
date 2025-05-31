@@ -699,3 +699,11 @@ body {
 .animate-professionale {
 	animation: fadeInUpProfessionale 0.8s ease forwards;
 }
+footer {
+	background-color: #222;
+	color: white;
+	text-align: center;
+	padding: 2rem 0;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: auto;
+}
