@@ -707,3 +707,39 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 	margin-top: auto;
 }
+/* Sezioni Materie Professionali */
+.materia-section {
+    margin-bottom: 4rem;
+}
+
+.materia-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    position: relative;
+    border-bottom: 2px solid #eee;
+}
+
+.materia-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.materia-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.materia-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
