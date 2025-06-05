@@ -650,7 +650,11 @@ body {
 	gap: 2rem;
 	align-items: center;
 }
-
+.content img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
 .description {
 	flex: 1;
 	min-width: 300px;
